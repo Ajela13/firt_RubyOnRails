@@ -16,9 +16,8 @@ class FriendsTest < ApplicationSystemTestCase
 
     fill_in "Email", with: @friend.email
     fill_in "First name", with: @friend.first_name
-    fill_in "Las name", with: @friend.las_name
+    fill_in "Last name", with: @friend.last_name
     fill_in "Phone", with: @friend.phone
-    fill_in "String", with: @friend.string
     click_on "Create Friend"
 
     assert_text "Friend was successfully created"
@@ -31,9 +30,8 @@ class FriendsTest < ApplicationSystemTestCase
 
     fill_in "Email", with: @friend.email
     fill_in "First name", with: @friend.first_name
-    fill_in "Las name", with: @friend.las_name
+    fill_in "Last name", with: @friend.last_name
     fill_in "Phone", with: @friend.phone
-    fill_in "String", with: @friend.string
     click_on "Update Friend"
 
     assert_text "Friend was successfully updated"

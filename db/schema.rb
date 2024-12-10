@@ -13,8 +13,7 @@
 ActiveRecord::Schema[8.0].define(version: 2024_12_10_152053) do
   create_table "friends", force: :cascade do |t|
     t.string "first_name"
-    t.string "string"
-    t.string "las_name"
+    t.string "last_name"
     t.string "email"
     t.string "phone"
     t.datetime "created_at", null: false
