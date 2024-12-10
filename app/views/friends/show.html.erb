@@ -1,10 +1,14 @@
 <p style="color: green"><%= notice %></p>
+<div class="w-75 p-3 h-25 d-inline-block p-3 mb-2 bg-body-secondary border border-dark-subtle rounded" style="width: 120px;">
+<p  class="fs-1"><%=  @friend.first_name %> <%=  @friend.last_name %> </p>
 
-<%= render @friend %>
+<p class="fs-6">  <%=  @friend.email %> | <%=  @friend.phone %> </p>
 
-<div>
-  <%= link_to "Edit this friend", edit_friend_path(@friend) %> |
-  <%= link_to "Back to friends", friends_path %>
+<div >
+  <%= link_to "Edit ", edit_friend_path(@friend) , class:"btn btn-secondary btn-sm " %>   
+  <%= link_to "Back ", friends_path, class:"btn btn-secondary btn-sm" %>
 
-  <%= button_to "Destroy this friend", @friend, method: :delete %>
+<br/><br/>
+  <%= button_to "Destroy this friend", @friend, method: :delete, class:"btn btn-outline-danger btn-sm" %>
+</div>
 </div>
