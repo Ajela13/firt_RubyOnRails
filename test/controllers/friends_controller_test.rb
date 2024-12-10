@@ -17,7 +17,11 @@ class FriendsControllerTest < ActionDispatch::IntegrationTest
 
   test "should create friend" do
     assert_difference("Friend.count") do
+<<<<<<< HEAD
       post friends_url, params: { friend: { email: @friend.email, first_name: @friend.first_name, last_name: @friend.last_name, phone: @friend.phone } }
+=======
+      post friends_url, params: { friend: { email: @friend.email, first_name: @friend.first_name, last_name: @friend.last_name, phone: @friend.phone} }
+>>>>>>> 77d63fdef52d21434cfc012b9ad8bd19ed7aa737
     end
 
     assert_redirected_to friend_url(Friend.last)
