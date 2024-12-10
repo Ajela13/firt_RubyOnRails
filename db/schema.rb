@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema[8.0].define(version: 2024_12_10_183755) do
-=======
-ActiveRecord::Schema[8.0].define(version: 2024_12_10_152053) do
->>>>>>> 97baec1487fe543eda33d8d3a54afadef00b89b4
   create_table "friends", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
